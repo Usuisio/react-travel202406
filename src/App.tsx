@@ -4,7 +4,7 @@ import { PlanPage_common } from "./PlanPage/PlanPage_common";
 import { createContext, useState } from "react";
 
 
-export const pageContext = createContext({ setLanding: () => {}, set622: () => {}, set623: () => {}, set624: () => {} });
+export const pageContext = createContext({ page: "", setLanding: () => {}, set622: () => {}, set623: () => {}, set624: () => {} });
 
 function App() {
   const [page, setPage] = useState("landing");
@@ -12,7 +12,9 @@ function App() {
   const set622 = () => {setPage("622")};
   const set623 = () => {setPage("623")};
   const set624 = () => {setPage("624")};
+
   const pageContextValue = {
+    page,
     setLanding,
     set622,
     set623,

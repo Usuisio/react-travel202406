@@ -20,13 +20,14 @@ const NavigationRightAreaStyle = styled.div`
 
 export const Landing_Navigation = () => {
   const context = useContext(pageContext);
+
   return (
     <Landing_NavigationStyle>
-      <Button variant="contained" onClick={() => {context.setLanding()}}>かくしお旅行</Button>
+      <Button variant={context.page === "landing" ?"contained":"outlined"} onClick={() => {context.setLanding()}}>かくしお旅行</Button>
       <NavigationRightAreaStyle>
-      <Button variant="outlined" onClick={() => {context.set622()}}>6/22</Button>
-      <Button variant="outlined" onClick={() => {context.set623()}}>6/23</Button>
-      <Button variant="outlined" onClick={() => {context.set624()}}>6/24</Button>
+      <Button variant={context.page === "622" ?"contained":"outlined"} onClick={() => {context.set622()}}>6/22</Button>
+      <Button variant={context.page === "623" ?"contained":"outlined"} onClick={() => {context.set623()}}>6/23</Button>
+      <Button variant={context.page === "624" ?"contained":"outlined"} onClick={() => {context.set624()}}>6/24</Button>
       </NavigationRightAreaStyle>
     </Landing_NavigationStyle>
   );
