@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Landing_Navigation } from "../Landing/Landing_Navigation";
-import { Landing_Footer } from "../Landing/Landing_Footer";
+import { CommonNavigation } from "../common/commonNavigation";
+import { CommonFooter } from "../common/commonFooter";
 import { PlanPage_622_Timeline } from "./PlanPage_622_Timeline";
 import { Landing_Divider } from "../Landing/Divider";
 import { PlanPage_622_Schedule } from "./PlanPage_622_Schedule";
@@ -31,7 +31,7 @@ export const PlanPage_common: React.FC<PlanPage_commonProps> = ({
 }) => {
   return (
     <PlanPage_commonStyle>
-      <Landing_Navigation></Landing_Navigation>
+      <CommonNavigation></CommonNavigation>
       {visitDate === "622" ? (
         <PlanPage_common_622 />
       ) : visitDate === "623" ? (
@@ -40,7 +40,7 @@ export const PlanPage_common: React.FC<PlanPage_commonProps> = ({
         <PlanPage_common_624 />
       ) : null}
 
-      <Landing_Footer></Landing_Footer>
+      <CommonFooter></CommonFooter>
     </PlanPage_commonStyle>
   );
 };

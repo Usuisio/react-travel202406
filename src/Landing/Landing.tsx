@@ -1,12 +1,12 @@
 import { Divider } from "@mui/material";
-import { Landing_Navigation } from "./Landing_Navigation";
+import { CommonNavigation } from "../common/commonNavigation";
 import { Landing_Title } from "./Landing_Title";
 import {
   Landing_PictLeftCaptionContainer,
   Landing_PictRightCaptionContainer,
 } from "./Landing_PictCaptionContainer";
 import { useContext, useEffect, useState } from "react";
-import { Landing_Footer } from "./Landing_Footer";
+import { CommonFooter } from "../common/commonFooter";
 import { pageContext } from "../App";
 
 export const Landing = () => {
@@ -23,7 +23,7 @@ export const Landing = () => {
 
   return (
     <>
-      <Landing_Navigation></Landing_Navigation>
+      <CommonNavigation></CommonNavigation>
       <Landing_Title></Landing_Title>
       <Divider></Divider>
       <Divider></Divider>
@@ -74,7 +74,7 @@ export const Landing = () => {
         ></Landing_PictLeftCaptionContainer>
       )}
 
-      <Landing_Footer></Landing_Footer>
+      <CommonFooter></CommonFooter>
     </>
   );
 };

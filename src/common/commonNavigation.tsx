@@ -4,7 +4,7 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { pageContext } from "../App";
 
-const Landing_NavigationStyle = styled.div`
+const CommonNavigationStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,17 +18,17 @@ const NavigationRightAreaStyle = styled.div`
   gap: 10px;
 `;
 
-export const Landing_Navigation = () => {
+export const CommonNavigation = () => {
   const context = useContext(pageContext);
 
   return (
-    <Landing_NavigationStyle>
+    <CommonNavigationStyle>
       <Button variant={context.page === "landing" ?"contained":"outlined"} onClick={() => {context.setLanding()}}>かくしお旅行</Button>
       <NavigationRightAreaStyle>
       <Button variant={context.page === "622" ?"contained":"outlined"} onClick={() => {context.set622()}}>6/22</Button>
       <Button variant={context.page === "623" ?"contained":"outlined"} onClick={() => {context.set623()}}>6/23</Button>
       <Button variant={context.page === "624" ?"contained":"outlined"} onClick={() => {context.set624()}}>6/24</Button>
       </NavigationRightAreaStyle>
-    </Landing_NavigationStyle>
+    </CommonNavigationStyle>
   );
 };

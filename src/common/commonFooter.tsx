@@ -1,7 +1,7 @@
 
 import styled from "styled-components";
 
-const Landing_FooterStyle = styled.div`
+const CommonFooterStyle = styled.div`
   position: relative;
   height: 600px;
   width: 100%;
@@ -13,7 +13,7 @@ const Landing_FooterStyle = styled.div`
   opacity: 0.6;
 `;
 
-const Landing_FooterStyle_PictLayer = styled.div`
+const CommonFooterStyle_PictLayer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -36,11 +36,11 @@ const Landing_FooterStyle_PictLayer = styled.div`
   align-items: center;
 `;
 
-export const Landing_Footer = () => {
+export const CommonFooter = () => {
   return (
-    <Landing_FooterStyle>
-      <Landing_FooterStyle_PictLayer>
-      </Landing_FooterStyle_PictLayer>
-    </Landing_FooterStyle>
+    <CommonFooterStyle>
+      <CommonFooterStyle_PictLayer>
+      </CommonFooterStyle_PictLayer>
+    </CommonFooterStyle>
   );
 };

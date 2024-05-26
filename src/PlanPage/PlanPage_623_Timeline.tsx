@@ -40,7 +40,7 @@ export const PlanPage_623_Timeline = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          16:30 am
+          16:30 pm
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
