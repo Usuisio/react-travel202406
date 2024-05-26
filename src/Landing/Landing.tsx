@@ -32,7 +32,7 @@ export const Landing = () => {
           text1={"6/22"}
           text2={"新潟から日本海を超えて北の大地へ"}
           buttonText={"旅程を見る"}
-          pictPath={"../images/akashia_640.png"}
+          pictPath={"./images/akashia_640.png"}
           onClick={context.set622}
         ></Landing_PictRightCaptionContainer>
       ) : (
@@ -40,7 +40,7 @@ export const Landing = () => {
           text1={"6/22"}
           text2={"新潟から日本海を超えて北の大地へ"}
           buttonText={"旅程を見る"}
-          pictPath={"../images/akashia_640.png"}
+          pictPath={"./images/akashia_640.png"}
           onClick={context.set622}
         ></Landing_PictLeftCaptionContainer>
       )}
@@ -50,7 +50,7 @@ export const Landing = () => {
         text1={"6/23"}
         text2={"道央を縦断しておいしいものを巡る"}
         buttonText={"旅程を見る"}
-        pictPath={"../images/kaisen_640.png"}
+        pictPath={"./images/kaisen_640.png"}
         onClick={context.set623}
       ></Landing_PictRightCaptionContainer>
 
@@ -61,7 +61,7 @@ export const Landing = () => {
           text1={"6/24"}
           text2={"太平洋で朝日を眺めながら杜の都へ"}
           buttonText={"旅程を見る"}
-          pictPath={"../images/matsushima_640.png"}
+          pictPath={"./images/matsushima_640.png"}
           onClick={context.set624}
         ></Landing_PictRightCaptionContainer>
       ) : (
@@ -69,7 +69,7 @@ export const Landing = () => {
           text1={"6/24"}
           text2={"太平洋で朝日を眺めながら杜の都へ"}
           buttonText={"旅程を見る"}
-          pictPath={"../images/matsushima_640.png"}
+          pictPath={"./images/matsushima_640.png"}
           onClick={context.set624}
         ></Landing_PictLeftCaptionContainer>
       )}

@@ -25,7 +25,7 @@ const Landing_FooterStyle_PictLayer = styled.div`
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0)
     ),
-    /* 上下のグラデーション */ url("/images/Footer.png");
+    /* 上下のグラデーション */ url("./images/Footer.png");
   background-size: cover;
   background-position: center;
   opacity: 1;

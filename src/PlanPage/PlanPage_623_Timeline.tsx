@@ -23,11 +23,21 @@ export const PlanPage_623_Timeline = () => {
             小樽港に到着
           </Typography>
           <Typography color="text.secondary">
-            早朝未明のため、小樽港からの連絡バスはありません。
+            ※早朝未明のため、小樽港からの連絡バスはありません。
           </Typography>
         </TimelineContent>
       </TimelineItem>
-
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography variant="h6" component="span">
+          JRで札幌へ移動、終日北海道観光
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
           16:30 am
@@ -54,7 +64,8 @@ export const PlanPage_623_Timeline = () => {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>苫小牧港出発</TimelineContent>
+        <TimelineContent>
+          <Typography variant="h6" component="span">苫小牧港出発</Typography></TimelineContent>
       </TimelineItem>
     </Timeline>
   );

@@ -26,7 +26,7 @@ export const PlanPage_622_Schedule = () => {
           window.open("https://www.snf.jp/guide/embark/#6037812162cd206acf2f14c6a2f77b42eceaf147166e1f8ec99c26ff7e69fed9", "_blank");
         }}
       >
-        新潟フェリーターミナル
+        新潟フェリーターミナル（連絡バス情報を含む）
       </Button>
     </>
   );
